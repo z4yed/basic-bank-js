@@ -1,30 +1,86 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
     <title>Basic Bank With JS!</title>
-  </head>
-  <body style="background-color: azure;">
+</head>
+
+<body style="background-color: azure;">
 
     <div class="container">
-        
-        <h1 class="text-center display-4 fw-normal my-5">Let's get some <span class="text-success">Moooooneey</span> !! </h1>
+
+        <h1 class="text-center display-4 fw-normal my-5">Let's get some <span class="text-success">Moooooneey</span> !!
+        </h1>
+
+
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h3 class="card-title display-6 fw-normal ">Deposit</h3>
+                        <h2 class="display-4 fw-normal text-secondary">$<span id="deposit-total"
+                                class="text-info">00</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h3 class="card-title display-6 fw-normal ">Withdraw</h3>
+                        <h2 class="display-4 fw-normal text-secondary">$<span id="withdraw-total"
+                                class="text-info">00</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h3 class="card-title display-6 fw-normal ">Total Balance</h3>
+                        <h2 class="display-4 fw-normal text-secondary">$<span id="total-balance"
+                                class="text-info">00</span></h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 col-md-6">
+                <h2>Deposit Here: </h2>
+                <div>
+                    <input type="text" id="deposit-input" class="form-control" placeholder="$ you want to deposit">
+                    <button class="btn btn-outline-success mt-2" id="deposit-button">Deposit</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <h2>Withdraw Here: </h2>
+                <div>
+                    <input type="text" id="withdraw-input" class="form-control" placeholder="$ you want to withdraw">
+                    <button class="btn btn-outline-success mt-2" id="withdraw-button">Withdraw</button>
+                </div>
+            </div>
+        </div>
 
     </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
 
     <script src="main.js"></script>
 
-  </body>
+</body>
+
 </html>
